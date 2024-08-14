@@ -79,7 +79,7 @@ export function Footer() {
             <IconButton size="sm" color="gray" variant="text"
             onClick={function(){
               const a = document.createElement('a');
-              a.href ='';
+              a.href ='https://www.linkedin.com/gurinderkhabra';
               a.target = '_blank';
               a.click();
             }}

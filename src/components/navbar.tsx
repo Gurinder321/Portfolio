@@ -24,7 +24,7 @@ const NAV_MENU = [
     icon: UserCircleIcon,
   },
   {
-    name: "Usecases",
+    name: "Case studies",
     icon: CommandLineIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
   },

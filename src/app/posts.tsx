@@ -100,16 +100,14 @@ export function Posts() {
         Latest Blog Posts
       </Typography>
       <Typography variant="h1" className="mb-2">
-        Trends News
+        Case studies
       </Typography>
       <Typography
         variant="lead"
         color="gray"
         className="max-w-3xl mb-36 text-center text-gray-500"
       >
-        Check out what&apos;s new in the web development and tech worls! Do not
-        forget to subscribe to our blog and we will notify you with the latest
-        news.
+        Check out the solutions that we helped companies achieve
       </Typography>
       <div className="container my-auto grid grid-cols-1 gap-x-8 gap-y-16 items-start lg:grid-cols-3">
         {POSTS.map(({ img, tag, title, desc, date, author }) => (

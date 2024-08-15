@@ -16,18 +16,18 @@ import {
 
 const NAV_MENU = [
   {
-    name: "Posts",
+    name: "Publications",
     icon: RectangleStackIcon,
   },
-  {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Case studies",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
-  },
+  // {
+  //   name: "Account",
+  //   icon: UserCircleIcon,
+  // },
+  // {
+  //   name: "Case studies",
+  //   icon: CommandLineIcon,
+  //   href: "#",
+  // },
 ];
 
 interface NavItemProps {
@@ -85,9 +85,9 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">posts</Button>
+          {/* <Button variant="text">Sign In</Button> */}
+          <a href="https://www.linkedin.com/gurinderkhabra" target="_blank">
+            <Button color="gray">LinkedIn</Button>
           </a>
         </div>
         <IconButton
@@ -114,8 +114,8 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Sign In</Button>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            {/* <Button variant="text">Sign In</Button> */}
+            <a href="#" target="_blank">
               <Button color="gray">posts</Button>
             </a>
           </div>

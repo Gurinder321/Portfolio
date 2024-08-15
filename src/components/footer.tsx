@@ -17,14 +17,13 @@ export function Footer() {
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
           >
-            Join our community!
+            Subscribe to our newsletter
           </Typography>
           <Typography
             color="white"
             className=" md:w-7/12 text-center my-3 !text-base"
           >
-            Get news in your inbox every week! We hate spam too, so no worries
-            about this.
+            Receive updates on our research
           </Typography>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
             <div className="w-80">
@@ -36,71 +35,11 @@ export function Footer() {
             </Button>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center !justify-between">
-          <Typography
-            as="a"
-            href="https://www.material-tailwind.com"
-            target="_blank"
-            variant="h6"
-            className="text-gray-900"
-          >
-            
-          </Typography>
-          <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
-            {LINKS.map((link, index) => (
-              <li key={index}>
-                <Typography
-                  as="a"
-                  href="#"
-                  variant="small"
-                  color="white"
-                  className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
-                >
-                  {link}
-                </Typography>
-              </li>
-            ))}
-          </ul>
-          <div className="flex w-fit justify-center gap-2">
-            {/* <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-twitter text-lg" />
-            </IconButton> */}
-            {/* <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-youtube text-lg" />
-            </IconButton> */}
-            {/* <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-instagram text-lg" />
-            </IconButton> */}
-            {/* <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-github text-lg" />
-            </IconButton> */}
-
-            {/* Linkedin */}
-            <IconButton size="sm" color="gray" variant="text"
-            onClick={function(){
-              const a = document.createElement('a');
-              a.href ='https://www.linkedin.com/gurinderkhabra';
-              a.target = '_blank';
-              a.click();
-            }}
-            >
-              <i className="fa-brands fa-linkedin text-lg" />
-            </IconButton>
-            {/* End of LinkedIn */}
-          </div>
-        </div>
         <Typography
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"
         >
           &copy; {CURRENT_YEAR} Gurinder Khabra
-          {/* <a href="https://www.material-tailwind.com" target="_blank">
-            Material Tailwind
-          </a>{" "}
-          by{" "} */}
-          {/* <a href="https://www.creative-tim.com" target="_blank">
-            Creative Tim
-          </a> */}
           
         </Typography>
       </div>

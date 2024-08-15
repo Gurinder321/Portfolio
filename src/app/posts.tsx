@@ -1,6 +1,8 @@
 "use client";
 
-import React from "react";
+import React, {
+  useState,
+} from "react";
 import {
   Button,
   Typography,
@@ -81,26 +83,48 @@ const POSTS = [
   },
 ];
 
+const titles_array = [
+  'Case studies',
+  'Partners',
+  'AI',
+  'Trends',
+  'Companies',
+  'Tools',
+]
+
 export function Posts() {
+  /**
+   * STATES
+   */
+  const
+  [ titleText, setTitleText ] = useState(titles_array[0])
+  /**
+   * END OF STATES
+   */
   return (
     <section className="grid min-h-screen place-items-center p-8">
       <Tabs value="trends" className="mx-auto max-w-7xl w-full mb-16 ">
         <div className="w-full flex mb-8 flex-col items-center">
           <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90">
-            <Tab value="frontend">Case Studies</Tab>
-            <Tab value="cloud">Partners</Tab>
-            <Tab value="ai">AI</Tab>
-            <Tab value="trends">Trends</Tab>
-            <Tab value="backend">Companies</Tab>
-            <Tab value="tools">Tools</Tab>
+            {
+              titles_array.map(function(item, index){
+                return(
+                  <Tab
+                  key={index}
+                  value={item}
+                  onClick={function(){
+                    setTitleText(titles_array[index]);
+                  }}
+                  >{item}</Tab>
+                )
+              })
+            }
           </TabsHeader>
         </div>
       </Tabs>
-      <Typography variant="h6" className="mb-2">
-        Latest Blog Posts
-      </Typography>
+      
       <Typography variant="h1" className="mb-2">
-        Case studies
+        {titleText}
       </Typography>
       <Typography
         variant="lead"

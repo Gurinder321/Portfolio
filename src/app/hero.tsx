@@ -27,19 +27,8 @@ function Hero() {
             <Input label="name@domain.com" />
           </div>
           <Button size="md" className="lg:w-max shrink-0" fullWidth color="gray">
-            get started
+            get informed
           </Button>
-        </div>
-        <div className="flex items-center gap-1">
-          <Typography variant="small" className="font-normal text-gray-700">
-            See our{" "}
-            <a
-              href="#"
-              className="hover:text-gray-900 transition-colors underline"
-            >
-              Services and Offers
-            </a>
-          </Typography>
         </div>
       </div>
     </div>
